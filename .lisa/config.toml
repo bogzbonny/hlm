@@ -1,0 +1,10 @@
+agent_cmd = "codex exec --oss -m gpt-oss:120b"
+timeout_minutes = 30
+summary_lines = 20
+task_namer_model = "qwen3:0.6b"
+task_chooser_model = "gpt-oss:120b"
+must_pass = [
+    "cargo test --quiet",
+    "cargo clippy -- -D warnings",
+]
+initialization_cmd = "docker-compose -f ~/dev/src/github.com/DevsHero/search-scrape/docker-compose.yml up searxng -d"
