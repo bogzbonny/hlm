@@ -46,10 +46,6 @@ either the `defer_to_subtasks` tool or the `replace_with_subtasks` tool.
     - Provide the most direct path to implementation, avoiding over‑engineering
       or roundabout approaches.
 
-IMPORTANT!! tasks can ONLY be added/modified with the tools: `add_task`, `add_tasks`,
-`edit_task`, `create_subtask`, `link_tasks`, and `delete_task`, if you do not add
-tasks with the above tools THEY WILL NOT ACTUALLY BE ADDED! USE THE TOOLS!
-
 ### Step 3: EVALUATE PRD COMPLETENESS  
  - evaluate the PRD against the all (existing and new) tasks IN EXTENSIVE
    DETAIL: Are the tasks comprehensive and each have less than 2 story points? 
