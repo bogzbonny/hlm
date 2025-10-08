@@ -8,3 +8,5 @@ must_pass = [
     "cargo clippy -- -D warnings",
 ]
 initialization_cmd = "docker-compose -f ~/dev/src/github.com/DevsHero/search-scrape/docker-compose.yml up searxng -d"
+auto_push = false
+planning_turns = 0
