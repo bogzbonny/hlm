@@ -2,47 +2,73 @@
 
 Parse the PRD into a structured, dependency-aware, and logically sequenced list
 of development tasks. Add and modify tasks using the tools: `add_task`, `add_tasks`,
-`edit_task`, `create_subtask`, `link_tasks`. 
+`edit_task`, `create_subtask`, `link_tasks`, and `delete_task`. 
 
 You may list all the tasks with the tool `list_all_tasks`. 
 
-## Pre-Analysis (Essential)
-1. Use ripgrep (rg) and Read tools to understand existing codebase
-2. Use web search tools to research relevant example code for any dependencies you will use
-2. Check current versions of mentioned libraries (avoid outdated training data)
-3. Identify dependencies between tasks for proper sequencing
-4. Determine which features need tests (business logic, APIs, data processing)
+## THE ONLY PROCESS YOU FOLLOW:
 
-## Task Details and Story Points
+### Step 0: PRE-ANALYSIS (CRITICAL!)
 
-Tasks should:
-1. Be specific and have actionable implementation steps
-2. Follow a logical sequence
-3. Include clear guidance on implementation approach using notes
-   (`add_notes_to_task` tool) 
-4. Have appropriate dependency chains between subtasks (using full subtask IDs)
-5. Provide the most direct path to implementation, avoiding over‑engineering or roundabout approaches.
+ - Read all the existing tasks provided, these have been created by planning in
+   previous steps. CONSIDER THESE TASKS when making new tasks
+ - Use ripgrep (rg) and Read tools to understand existing codebase
+ - Use web search tools to research relevant example code for any dependencies you will use
+ - Check current versions of mentioned libraries (avoid outdated training data)
+ - Identify dependencies between tasks for proper sequencing
+ - Determine which features need tests (business logic, APIs, data processing)
 
-- **(1 story)**: Single file, <50 lines, one clear action
-- **(2 stories)**: 2-3 files, <100 lines, or includes testing
-- **Never exceed 2 stories** - Break down anything larger
+### Step 1: EVALUATE EXISTING TASK SIZE
 
-## Critical Sequencing Rules
-1. **Dependencies first**: Database before models, server before routes
-2. **Build order**: Setup → Core → Features → Polish
+The difficulty of each task can be estimated with story points:
+ - **(1 story)**: Single file, <50 lines, one clear action
+ - **(2 stories)**: 2-3 files, <100 lines, or includes testing
+ - **Never exceed 2 stories** - Break down anything larger
+
+Evaluate the size of the task provided. CRITICAL: Is this task > 2 story points?
+If so then this task is too complex. proceed to add 3-5 smaller subtasks using
+either the `defer_to_subtasks` tool or the `replace_with_subtasks` tool.
+
+### Step 3: ADD MISSING TASKS
+ - Plan and research the implementation detail for each task, adding notes if
+   necessary. Notes can be added using the `add_notes_to_task` tool. Tasks
+   should:
+    - Be small and extremely simple.
+    - Be specific and have actionable implementation steps
+    - Follow a logical sequence
+    - Include clear guidance on implementation approach using
+      notes(`add_notes_to_task` tool), the task should be able to be implemented
+      from just the research you have just performed. 
+    - Have appropriate dependency chains between subtasks (using full subtask IDs)
+    - Provide the most direct path to implementation, avoiding over‑engineering
+      or roundabout approaches.
+
+### Step 3: EVALUATE PRD COMPLETENESS  
+ - evaluate the PRD against the all the tasks IN EXTENSIVE DETAIL: Are the tasks
+   comprehensive and each have less than 2 story points? 
+    - If NO then GO BACK to Step 0.
+    - If YES then exit by calling `mark_planning_complete`.
+
+---
 
 ## ANTI-PATTERNS TO AVOID
-- **NO over-engineering**: Skip design patterns unless PRD requires them
-- **NO speculation**: Don't add "nice-to-have" features
-- **NO abstraction layers**: Direct implementation unless PRD specifies
-- **NO microservices/CQRS/event-sourcing** for simple apps
-- **NO forcing TDD**: Only for testable features, not config/styling
+ - **NO over-engineering**: Skip design patterns unless PRD requires them
+ - **NO speculation**: Don't add "nice-to-have" features
+ - **NO abstraction layers**: Direct implementation unless PRD specifies
+ - **NO microservices/CQRS/event-sourcing** for simple apps
+ - **NO forcing TDD**: Only for testable features, not config/styling
 
 ## Task Writing Rules
-- **Be specific**: "Add POST /login endpoint with JWT auth" not "Implement auth"
-- **Most direct path**: Choose simplest solution that works
-- **Respect PRD tech choices**: Don't "improve" specified technologies
-- **YAGNI strictly**: Only what PRD explicitly requires
+ - **Be extremely specific**: "Add POST /login endpoint with JWT auth" not "Implement auth"
+ - **Most direct path**: Choose simplest solution that works
+ - **Respect PRD tech choices**: Don't "improve" specified technologies
+ - **YAGNI strictly**: Only what PRD explicitly requires
+
+# Existing Tasks
+
+You have already established the following tasks: 
+
+{{ tasks }}
 
 # The PRD 
 
