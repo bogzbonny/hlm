@@ -6,7 +6,7 @@ Implement the following task: {{ task }}
 
 MOST IMPORTANT: You MUST mark the task complete with `mark_task_completed` tool when you are done!
 
-### LEARNING CRITERIA - ONLY write a codebase note if you encounter:
+### LEARNING CRITERIA - ONLY write a code-base note if you encounter:
  - **Framework gotcha**: Unexpected behavior that wastes time 
  - **Non-obvious solution**: Fix that isn't in docs 
  - **Breaking change**: Version-specific issue 
