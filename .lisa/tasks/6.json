@@ -1,9 +1,0 @@
-{
-  "id": 6,
-  "description": "Generate correct parsing objects for each example and store them in hlm_examples.toml",
-  "sub_tasks": [
-    4
-  ],
-  "notes": "",
-  "status": "Uncompleted"
-}

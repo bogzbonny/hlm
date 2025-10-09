@@ -1,9 +1,0 @@
-{
-  "id": 7,
-  "description": "Derive input templates for each example and append to hlm_examples.toml entries",
-  "sub_tasks": [
-    6
-  ],
-  "notes": "",
-  "status": "Uncompleted"
-}

@@ -1,7 +1,0 @@
-{
-  "id": 16,
-  "description": "Add unit tests covering regex matching, similarity fallback thresholds, and ordering algorithm behavior. Tests must pass with `cargo test` and avoid network calls by using cache.",
-  "sub_tasks": [],
-  "notes": "",
-  "status": "Uncompleted"
-}

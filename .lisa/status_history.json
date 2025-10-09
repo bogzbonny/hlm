@@ -1,36 +1,6 @@
 [
   {
-    "timestamp": "2025-10-09T00:08:58.253023Z",
+    "timestamp": "2025-10-09T19:32:30.348494Z",
     "status": "Planning"
-  },
-  {
-    "timestamp": "2025-10-09T00:12:57.872334Z",
-    "status": "Planning"
-  },
-  {
-    "timestamp": "2025-10-09T00:42:34.881355Z",
-    "status": "Planning"
-  },
-  {
-    "timestamp": "2025-10-09T00:43:21.074445Z",
-    "status": "Planning"
-  },
-  {
-    "timestamp": "2025-10-09T01:21:49.132242Z",
-    "status": "Planning"
-  },
-  {
-    "timestamp": "2025-10-09T01:29:14.722575Z",
-    "status": "Planning"
-  },
-  {
-    "timestamp": "2025-10-09T01:34:04.50052Z",
-    "status": "Planning"
-  },
-  {
-    "timestamp": "2025-10-09T01:40:22.699715Z",
-    "status": {
-      "Working": 1
-    }
   }
 ]

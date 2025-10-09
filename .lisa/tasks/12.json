@@ -1,9 +1,0 @@
-{
-  "id": 12,
-  "description": "Implement `hlm list` to show .hlm files sorted by descending success rate",
-  "sub_tasks": [
-    8
-  ],
-  "notes": "",
-  "status": "Uncompleted"
-}
