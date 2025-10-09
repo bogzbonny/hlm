@@ -1,0 +1,7 @@
+{
+  "id": 1,
+  "description": "Set up Cargo workspace with library crate `hlm` and binary crate `hlm-cli`; include workspace Cargo.toml referencing both members; ensure library is public for external use",
+  "sub_tasks": [],
+  "notes": "",
+  "status": "Uncompleted"
+}

@@ -1,0 +1,9 @@
+{
+  "id": 10,
+  "description": "Implement file‑based cache for LLM evaluations to avoid redundant calls",
+  "sub_tasks": [
+    5
+  ],
+  "notes": "",
+  "status": "Uncompleted"
+}

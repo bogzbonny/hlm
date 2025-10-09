@@ -1,0 +1,9 @@
+{
+  "id": 3,
+  "description": "Implement `hlm init` subcommand to create default hlm_gen_config.toml",
+  "sub_tasks": [
+    1
+  ],
+  "notes": "",
+  "status": "Uncompleted"
+}

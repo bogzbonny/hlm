@@ -1,0 +1,9 @@
+{
+  "id": 15,
+  "description": "Write tests for all commands, ensure `cargo test` passes, and set up CI for builds",
+  "sub_tasks": [
+    14
+  ],
+  "notes": "",
+  "status": "Uncompleted"
+}

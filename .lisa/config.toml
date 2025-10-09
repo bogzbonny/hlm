@@ -8,4 +8,4 @@ must_pass = [
 ]
 initialization_cmd = "docker-compose -f ~/dev/src/github.com/DevsHero/search-scrape/docker-compose.yml up searxng -d"
 auto_push = false
-planning_turns = 3
+planning_turns = 1

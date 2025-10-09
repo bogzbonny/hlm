@@ -1,0 +1,9 @@
+{
+  "id": 5,
+  "description": "Integrate `ollama-rs` to generate example sentences, parsing JSON, and templates",
+  "sub_tasks": [
+    4
+  ],
+  "notes": "",
+  "status": "Uncompleted"
+}

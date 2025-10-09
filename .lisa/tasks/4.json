@@ -1,0 +1,9 @@
+{
+  "id": 4,
+  "description": "Implement `hlm generate-examples` to produce hlm_examples.toml with 10 calendar entries",
+  "sub_tasks": [
+    3
+  ],
+  "notes": "",
+  "status": "Uncompleted"
+}
